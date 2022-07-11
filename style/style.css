@@ -1,0 +1,24 @@
+/*Universal Settings*/
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+}
+
+/*Logo + Basic Buttons*/
+#logo {
+  margin: auto;
+  text-align: center;
+}
+
+#logo img {
+  width: 23%;
+  height: auto;
+}
