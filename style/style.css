@@ -1,4 +1,8 @@
 /*Universal Settings*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
 }
@@ -8,17 +12,85 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 
-p {
+p,
+li {
   font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
 }
 
 /*Logo + Basic Buttons*/
+#sezione-logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
 #logo {
-  margin: auto;
-  text-align: center;
+  width: 50%;
+  height: auto;
 }
 
-#logo img {
-  width: 23%;
+#logg {
+  box-sizing: border-box;
+  text-align: end;
+  margin-right: 8rem;
+}
+
+#basic {
+  display: flex;
+  list-style: none;
+}
+#basic li {
+  padding-right: 2rem;
+}
+#basic img {
+  width: 2.5rem;
   height: auto;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  transition: 0.4s;
+}
+#basic img:hover {
+  filter: invert(1);
+  background-color: #0046d9;
+}
+
+/* Categories Section */
+
+#categories {
+  display: flex;
+  padding: 0rem 1rem;
+  justify-content: space-between;
+}
+#categories li {
+  list-style: none;
+}
+
+#categories li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  transition: 0.4s;
+}
+
+#categories li a:hover {
+  color: white;
+  background-color: #ffb926;
+}
+
+/*Slideshow Container*/
+
+.slideshow-container {
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img {
+  width: 102%;
+  height: auto;
+}
+.slideshow-pic {
+  display: none;
 }
