@@ -23,12 +23,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/style.css" />
+    <script src="js/index.js"></script>
   </head>
   <body>
     <!-- Logo + Basic Buttons -->
     <nav id="sezione-logo">
       <div id="logg">
-        <img src="src/index.jpg" alt="strumenti-musicali-logo" id="logo" />
+        <img src="src/index.png" alt="strumenti-musicali-logo" id="logo" />
       </div>
       <ul id="basic">
         <li>
@@ -65,26 +66,39 @@
       </ul>
     </nav>
     <!-- Promotional Section Slideshow -->
-    <section class="slideshow-container">
-      <div class="slideshow-pic">
-        <img
-          src="src/banner-home-page-premio-itqf-2022-23.webp"
-          alt="news-premio-strumenti-musicali"
-        />
+    <div class="container-frame">
+      <div class="container-images">
+        <img src="src/banner-home-page-premio-itqf-2022-23.webp" alt="" />
+        <img src="src/news-desktop-casio.jpeg" alt="" />
+        <img src="src/news-desktop-kit-drums.webp" alt="" />
+        <img src="src/news-desktop.webp" alt="" />
+        <!-- Tasto Cerca -->
+        <form action="./search.php" id="search">
+          <input
+            type="text"
+            placeholder="Cerca il tuo nuovo strumento!"
+            class="input-search"
+          />
+          <input type="submit" value="Let's go! 🎸" id="search-button" />
+        </form>
       </div>
-      <div class="slideshow-pic">
-        <img src="src/news-desktop-casio.webp" alt="news-casio-watch" />
+    </div>
+    <!-- Most searched brands -->
+    <section>
+      <h1 id="brand-names">Lavoriamo solo con i migliori brand.</h1>
+      <div class="brand-grid">
+        <div class="grid-item"><img src="src/kramer.png" alt="" /></div>
+        <div class="grid-item"><img src="src/esp.png" alt="" /></div>
+        <div class="grid-item"><img src="src/ibanez.png" alt="" /></div>
+        <div class="grid-item"><img src="src/fender.png" alt="" /></div>
+        <div class="grid-item"><img src="src/gibson.png" alt="" /></div>
+        <div class="grid-item"><img src="src/jackson.png" alt="" /></div>
+        <div class="grid-item">
+          <img src="src/marshall.png" alt="" />
+        </div>
+        <div class="grid-item"><img src="src/martin.png" alt="" /></div>
+        <div class="grid-item"><img src="src/zildjan.png" alt="" /></div>
       </div>
-      <div class="slideshow-pic">
-        <img src="src/news-desktop-kit-drums.webp" alt="news-drumkits" />
-      </div>
-      <div class="slideshow-pic">
-        <img src="src/news-desktop.webp" alt="news-desktop" />
-      </div>
-      <div class="slideshow-pic">
-        <img src="src/desktop-summer-deals.webp" alt="summer-deals" />
-      </div>
-      <!-- Buttons Slideshow -->
     </section>
   </body>
 </html>

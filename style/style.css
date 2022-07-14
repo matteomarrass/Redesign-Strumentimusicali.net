@@ -10,10 +10,12 @@ body {
 h1,
 h2 {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
 }
 
 p,
-li {
+li,
+input {
   font-family: "Karla", sans-serif;
   font-size: 1.2rem;
 }
@@ -34,6 +36,7 @@ li {
   box-sizing: border-box;
   text-align: end;
   margin-right: 8rem;
+  width: 100%;
 }
 
 #basic {
@@ -59,7 +62,7 @@ li {
 
 #categories {
   display: flex;
-  padding: 0rem 1rem;
+  padding: 0rem 2rem;
   justify-content: space-between;
 }
 #categories li {
@@ -81,16 +84,99 @@ li {
 
 /*Slideshow Container*/
 
-.slideshow-container {
+.container-images {
+  display: flex;
   text-align: center;
-  position: relative;
-  margin: auto;
+  z-index: -100;
+}
+.container-frame {
+  width: 1220px;
+  overflow: hidden;
+  margin-left: 5%;
 }
 
-.slideshow-container img {
-  width: 102%;
-  height: auto;
+.container-frame img {
+  border-radius: 0.2rem;
+  animation: slide 24s infinite;
 }
-.slideshow-pic {
-  display: none;
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+/*Tasto Cerca*/
+
+#search {
+  position: absolute;
+  width: auto;
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 350%);
+}
+
+.input-search {
+  width: 400px;
+  height: 2em;
+  border-radius: 0.3rem;
+  border: 2px solid white;
+}
+
+#search-button {
+  height: 2rem;
+  background-color: #ffb926;
+  border: 2px solid #ffb926;
+  border-radius: 0.3rem;
+  transition: 0.4s;
+}
+
+#search-button:hover {
+  background-color: white;
+  border: 1px solid white;
+}
+textarea:focus,
+input:focus {
+  outline: 2px solid #ffb926;
+}
+
+/*Most searched brands*/
+section h1 {
+  padding: 2rem;
+  text-align: center;
+}
+
+.brand-grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.grid-item img {
+  width: 40%;
+  padding: 1.4rem;
 }
