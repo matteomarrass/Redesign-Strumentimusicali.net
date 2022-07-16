@@ -4,7 +4,8 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0 0;
+  background-color: #fefee9;
 }
 
 h1,
@@ -12,13 +13,17 @@ h2,
 span {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
+  color: #18171c;
 }
 
 p,
 li,
-input {
+input,
+a {
   font-family: "Karla", sans-serif;
   font-size: 1.2rem;
+  color: #18171c;
+  text-decoration: none;
 }
 
 /*Logo + Basic Buttons*/
@@ -72,14 +77,14 @@ input {
 
 #categories li a {
   text-decoration: none;
-  color: black;
+  color: #18171c;
   padding: 0.8rem;
   border-radius: 0.3rem;
   transition: 0.4s;
 }
 
 #categories li a:hover {
-  color: white;
+  color: #fefee9;
   background-color: #ffb926;
 }
 
@@ -156,8 +161,8 @@ input {
 }
 
 #search-button:hover {
-  background-color: white;
-  border: 1px solid white;
+  background-color: #fefee9;
+  border: 1px solid #fefee9;
 }
 textarea:focus,
 input:focus {
@@ -166,7 +171,7 @@ input:focus {
 
 /*Most searched brands*/
 section h1 {
-  padding: 2rem;
+  padding: 0.2rem;
   text-align: center;
 }
 
@@ -194,7 +199,7 @@ section h1 {
   padding: 0.4rem;
   margin: 1rem;
   border-radius: 2rem;
-  background-color: aliceblue;
+  background-color: #fefee9;
 }
 
 .reason img {
@@ -204,14 +209,55 @@ section h1 {
 
 /*Support us*/
 
-#support {
-  text-align: center;
-  display: grid;
-  margin-left: 3rem;
-  grid-template-columns: auto auto auto;
+.support img {
+  width: 2%;
 }
 
-#support img {
-  width: 10%;
-  padding: 0.4rem;
+/*Additional Services*/
+
+#services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.add-service {
+  text-align: center;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: #fefee9;
+}
+
+.add-service img {
+  padding: 1rem;
+  width: 20%;
+}
+
+.add-service li {
+  padding: 0.3rem;
+}
+
+/*Services*/
+
+#services ul {
+  list-style-type: "✓";
+  padding: 0;
+}
+
+.contact {
+  display: block;
+}
+
+#info ul {
+  list-style-type: none;
+}
+
+/*Footer*/
+
+footer {
+  text-align: center;
+}
+
+#clausole {
+  font-size: 0.7rem;
 }
