@@ -96,9 +96,8 @@ a {
   z-index: -100;
 }
 .container-frame {
-  width: 1220px;
+  margin: 0 12%;
   overflow: hidden;
-  margin-left: 5%;
 }
 
 .container-frame img {
